@@ -1,0 +1,9 @@
+{
+  "download_dir": "auto",
+  "existing_data_dir": "auto",
+  "upload_to_hf": true,
+  "hf_repo_id": "Legumchim/gmpp-dca-predict",
+  "hf_repo_type": "space",
+  "hf_path_in_repo": "best_model.joblib",
+  "user_agent": "ErnestJenkins-GMPP-pipeline/1.0 (quarterly academic check; low volume)"
+}

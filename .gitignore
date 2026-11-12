@@ -1,0 +1,21 @@
+# Never commit data, models, backups, secrets or runtime state
+venv/
+__pycache__/
+*.pyc
+logs/
+state/
+candidates/
+model-backups/
+raw/
+cleaned/
+*.csv
+*.xlsx
+*.xls
+*.ods
+*.joblib
+*.pkl
+*.zip
+.env
+*token*
+config.json
+.DS_Store

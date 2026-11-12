@@ -1,0 +1,14 @@
+Safeguards for the GMPP quarterly pipeline
+
+- A dry run (--dry-run) only detects files. It does not write into /Users/mac/GMPP
+  or /Users/mac/Desktop/gmpp-data, it does not train, and it does not upload.
+- The existing files in /Users/mac/Desktop/gmpp-data are read only.
+- If a new spreadsheet has an unknown column layout, the job stops, writes
+  NEW LAYOUT: human review needed, and notifies you. It will not clean, train,
+  or upload until you run:  python3 gmpp_pipeline.py --approve-layout
+- Training output goes to GMPP-pipeline/candidates/, not over your current files.
+- The live Hugging Face model is never changed during setup. A scheduled run may
+  upload only after a known or approved layout and a successful training run,
+  and only if a Hugging Face token is already available on the Mac. The previous
+  Space model is backed up under model-backups/ first.
+- Do not put a token in this folder, in config.json, or in the LaunchAgent plist.

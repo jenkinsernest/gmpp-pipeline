@@ -1,0 +1,13 @@
+# Shared environment for the quarterly pipeline, including training.
+# Versions match /workspace/gmpp/ch4/requirements.txt where possible.
+numpy==2.5.4
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+xgboost==3.4.1
+mord==0.7
+shap==0.54.1
+joblib==1.6.0
+matplotlib==3.11.2
+openpyxl>=3.1.0
+huggingface_hub>=0.36.0
